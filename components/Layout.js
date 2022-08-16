@@ -4,6 +4,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Meta />
+      <main>
+        <h1>Hello world</h1>
+      </main>
     </>
   )
 }
