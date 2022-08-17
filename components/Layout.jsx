@@ -1,12 +1,12 @@
+import React from 'react'
 import Meta from './Meta'
+import Navbar from './Navbar'
 
 const Layout = ({ children }) => {
   return (
     <>
       <Meta />
-      <main>
-        <h1>Hello world</h1>
-      </main>
+      <Navbar />
     </>
   )
 }
