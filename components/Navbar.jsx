@@ -4,7 +4,7 @@ import Link from "next/link"
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
-import Navlogo from '../public/assets/hard-hat.png'
+import Navlogo from '../public/assets/laptop.png'
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
