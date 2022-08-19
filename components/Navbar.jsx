@@ -1,10 +1,9 @@
 import React, {useState} from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
+import { AiOutlineClose, AiOutlineMail } from 'react-icons/ai'
 import { GrMenu } from 'react-icons/gr'
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
-import {BsFillPersonLinesFill} from 'react-icons/bs'
 import Navlogo from '../public/assets/laptop.png'
 
 const Navbar = () => {
@@ -44,8 +43,8 @@ const Navbar = () => {
       <div className={showNav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""}>
         <div className={
           showNav
-            ? "fixed left-0 top-0 w-[70%] sm:w-[60%] md:w-[45%]  h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-            : "fixed left-[-100%] top-0 w-[70%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+            ? "fixed left-0 top-0 w-[70%] sm:w-[60%] md:w-[45%]  h-screen bg-[#ffffff] p-10 ease-in duration-300"
+            : "fixed left-[-100%] top-0 w-[70%] sm:w-[60%] md:w-[45%] h-screen bg-[#ffffff] p-10 ease-in duration-300"
         }>
           <div>
             <div className="flex w-full items-center justify-between">
@@ -53,21 +52,6 @@ const Navbar = () => {
               <div onClick={handleShowNav} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50">
                 <AiOutlineClose />
               </div>
-            </div>
-            <div className="border-b border-t border-gray-300 my-4">
-              <div className="">
-              <div className="flex items-center justify-between my-4 w-full">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50">
-                  <FaLinkedin />
-                </div>
-                <div className="rounded-full shadow-lg shadow--gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50">
-                  <FaGithub />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50">
-                  <AiOutlineMail />
-                </div>
-              </div>
-            </div>
             </div>
           </div>
           <div className="py-4 flex flex-col">
@@ -86,6 +70,21 @@ const Navbar = () => {
               </Link>
             </ul>
           </div>
+          <div className="border-b border-t border-gray-300 my-4">
+              <div className="">
+                <div className="flex items-center justify-between my-4 w-full">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50">
+                    <FaLinkedin />
+                  </div>
+                  <div className="rounded-full shadow-lg shadow--gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50">
+                    <FaGithub />
+                  </div>
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50">
+                    <AiOutlineMail />
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </div>
