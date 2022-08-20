@@ -1,14 +1,14 @@
-import React from 'react'
-import Meta from './Meta'
-import Navbar from './Navbar'
+import React from 'react';
+import Meta from './Meta';
+import Navbar from './Navbar';
 
-const Layout = ({ children }) => {
+function Layout({ children }) {
   return (
     <>
       <Meta />
       <Navbar />
     </>
-  )
+  );
 }
 
-export default Layout
+export default Layout;
