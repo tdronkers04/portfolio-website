@@ -9,6 +9,19 @@ html {
   font-family: 'Lexend', sans-serif;
 }
 
+.image-container {
+  width: 50%;
+  max-width: 250px;
+  position: unset !important;
+}
+
+.image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
 @layer base {
   body {
     @apply: bg-[#ecf0f3] text-[#1f2937] tracking-wide
