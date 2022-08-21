@@ -9,22 +9,24 @@ function Main() {
   return (
     <div id="home" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center">
-        <Image alt="tim" src={timphoto} width={250} height={250} />
+        <div className="pt-10">
+          <Image alt="tim" src={timphoto} width={250} height={250} />
+        </div>
         <div>
           <div>
-            <h1 className="py-4 text-gray-700 text-2xl">
+            <h1 className="py-4 text-gray-700 text-3xl">
               Hi, I&#39;m
               {' '}
               <span className="">Tim </span>
               <span role="img" aria-label="waving hand">👋</span>
             </h1>
-            <p className="py-4 text-gray-600 max-w-[70%] md:max-w-[60%] lg:max-w-[40%] m-auto">
+            <p className="py-4 text-gray-600 text-lg max-w-[70%] md:max-w-[60%] lg:max-w-[50%] m-auto">
               I&#39;m a software engineer based in Broomfield, CO.
               I love building fast, scalable cloud applications.
               Recently I co-created Seymour, an open-source,
               easy-to-configure active monitoring solution.
             </p>
-            <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
+            <div className="flex items-center justify-between max-w-[300px] m-auto py-4">
               <a
                 href="/"
                 target="_blank"
@@ -52,7 +54,6 @@ function Main() {
           </div>
         </div>
       </div>
-
     </div>
   );
 }
