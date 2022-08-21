@@ -8,9 +8,9 @@ import timphoto from '../public/assets/tim_circle.png';
 function Main() {
   return (
     <div id="home" className="w-full h-screen text-center">
-      <div className="max-w-[1240px] w-full h-full mx-auto">
-        <Image alt="tim" src={timphoto} width={300} height={300} />
-        <div className="p-2 flex justify-center items-center">
+      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center">
+        <Image alt="tim" src={timphoto} width={250} height={250} />
+        <div>
           <div>
             <h1 className="py-4 text-gray-700 text-2xl">
               Hi, I&#39;m
