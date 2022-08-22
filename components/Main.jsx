@@ -14,7 +14,7 @@ function Main() {
         </div>
         <div id="intro">
           <div>
-            <h1 className="py-4 text-gray-700 text-xl md:text-2xl">
+            <h1 className="py-4 text-gray-700 text-2xl md:text-3xl">
               Hi, I&#39;m
               {' '}
               <span className="">Tim </span>
