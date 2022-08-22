@@ -14,7 +14,7 @@ function Navbar() {
   };
 
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100] p-4">
+    <div className="fixed w-full h-20 shadow-xl z-[99] p-4 bg-[#ffffff]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <div className="flex items-center justify-between">
           <Image src={Navlogo} alt="/" width="100" height="100" />
