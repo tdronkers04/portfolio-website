@@ -10,8 +10,8 @@ html {
 }
 
 .image-container {
-  width: 50%;
-  max-width: 250px;
+  width: 100%;
+  max-width: 150px;
   position: unset !important;
 }
 

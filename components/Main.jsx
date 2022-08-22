@@ -9,18 +9,18 @@ function Main() {
   return (
     <div id="home" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col items-center">
-        <div id="profile-picture" className="image-container">
+        <div id="profile-picture" className="image-container md:max-w-[250px]">
           <Image alt="tim" src={timphoto} layout="responsive" className="image" />
         </div>
         <div id="intro">
           <div>
-            <h1 className="py-4 text-gray-700 text-3xl">
+            <h1 className="py-4 text-gray-700 text-xl md:text-2xl">
               Hi, I&#39;m
               {' '}
               <span className="">Tim </span>
               <span role="img" aria-label="waving hand">👋</span>
             </h1>
-            <p className="py-4 text-gray-600 text-lg max-w-[70%] md:max-w-[60%] lg:max-w-[50%] m-auto">
+            <p className="py-4 text-gray-600 text-lg md:text-xl max-w-[70%] md:max-w-[60%] lg:max-w-[50%] m-auto">
               I&#39;m a software engineer based in Broomfield, CO.
               I love building fast, scalable cloud applications.
               Recently I co-created Seymour, an open-source,
