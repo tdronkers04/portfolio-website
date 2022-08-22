@@ -14,7 +14,7 @@ function Seymour() {
           </div>
           <h2 className="py-4 text-gray-700 text-xl md:text-2xl">Active Monitoring for API endpoints</h2>
           <p>
-            Seymour is an open-source and easy-to-configure active monitoring solution that allows users to simulate requests from globally distributed locations to test their API endpoints. For each test, Seymour measures the availability, response time, and correctness of the API endpoint response. We built Seymour to help engineering teams bolster existing testing approaches and handle the challenges of monitoring their increasingly complex systems. It enables rapid detection of issues in production before users experience them. Seymour's infrastructure is easily deployed on an AWS account with two CLI commands.
+            Seymour is an open-source and easy-to-configure active monitoring solution that allows users to simulate requests from globally distributed locations to test their API endpoints. For each test, Seymour measures the availability, response time, and correctness of the API endpoint response. We built Seymour to help engineering teams bolster existing testing approaches and handle the challenges of monitoring their increasingly complex systems. It enables rapid detection of issues in production before users experience them. Seymour&aposs infrastructure is easily deployed on an AWS account with two CLI commands.
           </p>
           <br />
           <p>
