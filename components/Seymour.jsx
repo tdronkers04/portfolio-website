@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import Image from 'next/image';
 import React from 'react';
 import seymourLogo from '../public/assets/seymour_text.png';
