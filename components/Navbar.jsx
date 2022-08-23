@@ -28,9 +28,9 @@ function Navbar() {
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>
-            <Link href="/">
+            <a href="https://blog.dronkers.dev/">
               <li className="ml-10 text-sm uppercase hover:border-b">Blog</li>
-            </Link>
+            </a>
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">Resume</li>
             </Link>
@@ -49,7 +49,7 @@ function Navbar() {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <Image src={Navlogo} alt="/" width="100" height="100" />
+              <Image src={Navlogo} alt="dronkers.dev logo" width="100" height="100" />
               <div onClick={handleShowNav} onKeyUp={handleShowNav} role="button" tabIndex={0} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50">
                 <AiOutlineClose />
               </div>
@@ -58,31 +58,31 @@ function Navbar() {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li className="py-4 text-sm">Home</li>
+                <li className="py-4 text-sm cursor-pointer">Home</li>
               </Link>
               <Link href="/">
-                <li className="py-4 text-sm">About</li>
+                <li className="py-4 text-sm cursor-pointer">About</li>
               </Link>
-              <Link href="/">
+              <a href="https://blog.dronkers.dev/">
                 <li className="py-4 text-sm">Blog</li>
-              </Link>
+              </a>
               <Link href="/">
-                <li className="py-4 text-sm">Resume</li>
+                <li className="py-4 text-sm cursor-pointer">Resume</li>
               </Link>
             </ul>
           </div>
           <div className="border-b border-t border-gray-300 my-4">
             <div className="">
               <div className="flex items-center justify-between my-4 w-full">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50">
+                <a className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50" href="https://www.linkedin.com/in/timdronkers">
                   <FaLinkedin />
-                </div>
-                <div className="rounded-full shadow-lg shadow--gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50">
+                </a>
+                <a className="rounded-full shadow-lg shadow--gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50" href="https://github.com/tdronkers04">
                   <FaGithub />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50">
+                </a>
+                <a className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50" href="mailto:tim@dronkers.dev">
                   <AiOutlineMail />
-                </div>
+                </a>
               </div>
             </div>
           </div>

@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Raleway: ['Raleway', 'sans-serif'],
+        Lexend: ['Lexend', 'sans-serif'],
       },
     },
   },
