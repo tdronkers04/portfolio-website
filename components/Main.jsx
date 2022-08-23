@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
@@ -23,7 +22,10 @@ function Main() {
             <p className="py-4 text-gray-600 text-lg md:text-xl max-w-[70%] md:max-w-[60%] lg:max-w-[50%] m-auto">
               I&#39;m a software engineer based in Broomfield, CO.
               I love building fast, scalable cloud applications.
-              Recently I co-created Seymour, an open-source,
+              Recently I co-created
+              {' '}
+              <span className="font-Lexend text-[#011e6f]"><a href="#seymour">Seymour</a></span>
+              , an open-source,
               easy-to-configure active monitoring solution.
             </p>
             <div className="flex items-center justify-between max-w-[300px] m-auto py-4">
