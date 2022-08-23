@@ -27,29 +27,15 @@ function Main() {
               easy-to-configure active monitoring solution.
             </p>
             <div className="flex items-center justify-between max-w-[300px] m-auto py-4">
-              <a
-                href="/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <FaLinkedin />
-                </div>
+              <a className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300" href="https://www.linkedin.com/in/timdronkers/">
+                <FaLinkedin />
               </a>
-              <a
-                href="/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <FaGithub />
-                </div>
+              <a className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300" href="https://github.com/tdronkers04">
+                <FaGithub />
               </a>
-              <Link href="/">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <AiOutlineMail />
-                </div>
-              </Link>
+              <a className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300" href="mailto:tim@dronkers.dev">
+                <AiOutlineMail />
+              </a>
             </div>
           </div>
         </div>
