@@ -1,6 +1,8 @@
 import React from 'react';
 import Trellific from './projects/Trellific';
 import GameAlert from './projects/GameAlert';
+import HoneyDoList from './projects/HoneyDoList';
+import AirlineRoutes from './projects/AirlineRoutes';
 
 function Projects() {
   return (
@@ -10,6 +12,8 @@ function Projects() {
         <div className="grid md:grid-cols-2 gap-8">
           <Trellific />
           <GameAlert />
+          <HoneyDoList />
+          <AirlineRoutes />
         </div>
       </div>
     </div>
