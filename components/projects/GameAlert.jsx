@@ -21,7 +21,7 @@ function GameAlert() {
             <p className="text-center py-1 rounded-lg bg-white text-gray-700 font-bold text-sm md:text-md cursor-pointer">Demo</p>
           </a>
         </div>
-        <div className="hidden md:grid grid-cols-3 gap-1 py-1">
+        <div className="hidden md:grid grid-cols-3 gap-1 place-items-center py-1">
           <div className="image-container max-w-[35px]">
             <Image src={jsIcon} alt="javascript" layout="responsive" className="image" />
           </div>
