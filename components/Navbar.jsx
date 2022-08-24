@@ -14,7 +14,7 @@ function Navbar() {
   };
 
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[99] p-4 bg-[#ffffff]">
+    <div className="fixed w-full h-20 shadow-xl z-[99] p-4 bg-[#ffffff]'">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <div className="flex items-center justify-between">
           <Image src={Navlogo} alt="/" width="100" height="100" />
@@ -58,16 +58,16 @@ function Navbar() {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li className="py-4 text-sm cursor-pointer">Home</li>
+                <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">Home</li>
               </Link>
               <Link href="/about">
-                <li className="py-4 text-sm cursor-pointer">About</li>
+                <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">About</li>
               </Link>
-              <a href="https://blog.dronkers.dev/">
+              <a onClick={handleShowNav} href="https://blog.dronkers.dev/">
                 <li className="py-4 text-sm">Blog</li>
               </a>
               <Link href="/">
-                <li className="py-4 text-sm cursor-pointer">Resume</li>
+                <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">Resume</li>
               </Link>
             </ul>
           </div>
