@@ -3,9 +3,9 @@ import React from 'react';
 
 function Bio() {
   return (
-    <div className='w-full h-screen text-center'>
+    <div className='w-full h-fit md:h-screen text-center'>
+      <div className='h-20 sm:h-0'></div>
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex items-center'>
-
         <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl">
           <div className="md:flex">
             <div className="md:shrink-0">
@@ -18,7 +18,6 @@ function Bio() {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );
