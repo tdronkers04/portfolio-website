@@ -20,13 +20,13 @@ function Main() {
               <span role="img" aria-label="waving hand">👋</span>
             </h1>
             <p className="py-4 text-gray-600 text-lg md:text-xl max-w-[70%] md:max-w-[60%] lg:max-w-[50%] m-auto">
-              I&#39;m a software engineer based in Broomfield, CO.
+              I&#39;m a software engineer based in Colorado.
               I love building fast, scalable cloud applications.
               Recently I co-created
               {' '}
               <span className="font-Lexend text-[#011e6f]"><a href="#seymour">Seymour</a></span>
               , an open-source,
-              easy-to-configure active monitoring solution.
+              easy-to-configure active monitoring solution. Thanks for stopping by!
             </p>
             <div className="flex items-center justify-between max-w-[300px] m-auto py-4">
               <a className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300" href="https://www.linkedin.com/in/timdronkers/">

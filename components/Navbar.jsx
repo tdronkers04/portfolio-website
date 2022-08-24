@@ -23,10 +23,10 @@ function Navbar() {
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+              <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">Home</li>
             </Link>
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
+            <Link href="/about">
+              <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">About</li>
             </Link>
             <a href="https://blog.dronkers.dev/">
               <li className="ml-10 text-sm uppercase hover:border-b">Blog</li>
@@ -60,7 +60,7 @@ function Navbar() {
               <Link href="/">
                 <li className="py-4 text-sm cursor-pointer">Home</li>
               </Link>
-              <Link href="/">
+              <Link href="/about">
                 <li className="py-4 text-sm cursor-pointer">About</li>
               </Link>
               <a href="https://blog.dronkers.dev/">
