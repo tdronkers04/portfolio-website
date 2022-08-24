@@ -1,7 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import boysImg from '../public/assets/boys.png'
-
 
 function Bio() {
   return (
@@ -11,7 +9,7 @@ function Bio() {
         <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-6xl">
           <div className="md:flex">
             <div className="md:shrink-0">
-              <img className="h-52 w-full object-cover md:h-full md:w-80" src="/assets/boys.png" alt="tim and sons"/>
+              <img className="h-52 w-full object-cover md:h-full md:w-80" src="/assets/boys.webp" alt="tim and sons"/>
             </div>
             <div className="p-8">
               <p className="mt-2 text-gray-700">I was born and raised in the San Francisco Bay Area (go Niners 🏈) but have called Colorado home for the last 10 years. I’m a husband and father of two boys. When I’m not coding or chasing my kids around, you can often find me outdoors, hopefully riding a snowboard 🏂 or bike 🚴‍♂️. If you enjoy Hunter S. Thompson’s writing I bet we would be fast friends.</p> 
