@@ -5,6 +5,8 @@ import Trellific from './projects/Trellific';
 import GameAlert from './projects/GameAlert';
 import HoneyDoList from './projects/HoneyDoList';
 import AirlineRoutes from './projects/AirlineRoutes';
+import Snaggl from './projects/Snaggl';
+import TradingCards from './projects/TradingCards';
 
 function Projects() {
   return (
@@ -14,8 +16,10 @@ function Projects() {
         <div className="grid md:grid-cols-2 gap-8">
           <Trellific />
           <GameAlert />
-          <HoneyDoList />
+          <Snaggl />
           <AirlineRoutes />
+          <HoneyDoList />
+          <TradingCards />
         </div>
       </div>
       <div className="flex justify-center py-12">
