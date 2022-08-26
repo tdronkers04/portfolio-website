@@ -23,12 +23,12 @@ function Navbar() {
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">Home</li>
+              <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">Portfolio</li>
             </Link>
             <Link href="/about">
               <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">About</li>
             </Link>
-            <a href="https://blog.dronkers.dev/">
+            <a href="https://blog.dronkers.dev/" target="_blank" rel="noopener noreferrer">
               <li className="ml-10 text-sm uppercase hover:border-b">Blog</li>
             </a>
             <Link href="/">
@@ -58,12 +58,12 @@ function Navbar() {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">Home</li>
+                <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">Portfolio</li>
               </Link>
               <Link href="/about">
                 <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">About</li>
               </Link>
-              <a onClick={handleShowNav} href="https://blog.dronkers.dev/">
+              <a onClick={handleShowNav} href="https://blog.dronkers.dev/" target="_blank" rel="noopener noreferrer">
                 <li className="py-4 text-sm">Blog</li>
               </a>
               <Link href="/">
@@ -74,13 +74,13 @@ function Navbar() {
           <div className="border-b border-t border-gray-300 my-4">
             <div className="">
               <div className="flex items-center justify-between my-4 w-full">
-                <a className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50" href="https://www.linkedin.com/in/timdronkers">
+                <a onClick={handleShowNav} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50" href="https://www.linkedin.com/in/timdronkers" target="_blank" rel="noopener noreferrer">
                   <FaLinkedin />
                 </a>
-                <a className="rounded-full shadow-lg shadow--gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50" href="https://github.com/tdronkers04">
+                <a onClick={handleShowNav} className="rounded-full shadow-lg shadow--gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50" href="https://github.com/tdronkers04" target="_blank" rel="noopener noreferrer">
                   <FaGithub />
                 </a>
-                <a className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50" href="mailto:tim@dronkers.dev">
+                <a onClick={handleShowNav} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50" href="mailto:tim@dronkers.dev">
                   <AiOutlineMail />
                 </a>
               </div>

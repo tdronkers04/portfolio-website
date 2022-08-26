@@ -6,7 +6,7 @@ import timphoto from '../public/assets/tim_circle.png';
 
 function Main() {
   return (
-    <div id="home" className="w-full h-screen text-center">
+    <div id="portfolio" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col items-center">
         <div id="profile-picture" className="image-container md:max-w-[250px]">
           <Image alt="tim" src={timphoto} priority layout="responsive" className="image" />
@@ -29,10 +29,10 @@ function Main() {
               easy-to-configure active monitoring solution. Thanks for stopping by!
             </p>
             <div className="flex items-center justify-between max-w-[300px] m-auto py-4">
-              <a className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300" href="https://www.linkedin.com/in/timdronkers/">
+              <a className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300" href="https://www.linkedin.com/in/timdronkers/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
               </a>
-              <a className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300" href="https://github.com/tdronkers04">
+              <a className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300" href="https://github.com/tdronkers04" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
               <a className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300" href="mailto:tim@dronkers.dev">
