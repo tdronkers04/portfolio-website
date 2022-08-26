@@ -9,7 +9,7 @@ function Main() {
     <div id="home" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col items-center">
         <div id="profile-picture" className="image-container md:max-w-[250px]">
-          <Image alt="tim" src={timphoto} layout="responsive" className="image" />
+          <Image alt="tim" src={timphoto} priority layout="responsive" className="image" />
         </div>
         <div id="intro">
           <div>
