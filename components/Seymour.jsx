@@ -10,7 +10,9 @@ function Seymour() {
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <div id="seymour-logo" className="image-container md:max-w-[400px]">
-            <Image alt="seymour logo" src={seymourLogo} layout="responsive" className="image" />
+            <a href="https://seymour-active-monitoring.github.io/">
+              <Image alt="seymour logo" src={seymourLogo} layout="responsive" className="image" />
+            </a>
           </div>
           <h2 className="py-4 text-gray-700 text-xl md:text-2xl">Active Monitoring for API endpoints</h2>
           <p>
@@ -27,7 +29,9 @@ function Seymour() {
           </div>
         </div>
         <div className="w-full min-w-[300px] max-w-[600px] h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4">
-          <Image src={seymourMap} className="rounded-xl" alt="/" />
+          <a href="https://seymour-active-monitoring.github.io/">
+            <Image src={seymourMap} className="rounded-xl" alt="seymour graphic" />
+          </a>
         </div>
         <div />
       </div>
