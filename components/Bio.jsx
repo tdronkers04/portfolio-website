@@ -17,7 +17,7 @@ function Bio() {
               <p className="mt-2 text-gray-700">
                 I started my professional life as an accountant but found my
                 {' '}
-                <a className="font-bold text-[#011e6f] cursor-pointer" href="https://blog.dronkers.dev/buy-the-ticket-take-the-ride">calling</a>
+                <a className="font-bold text-[#011e6f] cursor-pointer" href="https://blog.dronkers.dev/buy-the-ticket-take-the-ride" target="_blank" rel="noopener noreferrer">calling</a>
                 {' '}
                 in full-stack software development.
                 I’m a problem-solver by nature and do my best work in collaboration with others.

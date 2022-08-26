@@ -23,7 +23,7 @@ function Navbar() {
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">Portfolio</li>
+              <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">Home</li>
             </Link>
             <Link href="/about">
               <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">About</li>
@@ -31,9 +31,6 @@ function Navbar() {
             <a href="https://blog.dronkers.dev/" target="_blank" rel="noopener noreferrer">
               <li className="ml-10 text-sm uppercase hover:border-b">Blog</li>
             </a>
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Resume</li>
-            </Link>
           </ul>
           <div onClick={handleShowNav} onKeyUp={handleShowNav} role="button" tabIndex={0} className="md:hidden">
             <GrMenu size={30} />
@@ -58,7 +55,7 @@ function Navbar() {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">Portfolio</li>
+                <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">Home</li>
               </Link>
               <Link href="/about">
                 <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">About</li>
@@ -66,9 +63,6 @@ function Navbar() {
               <a onClick={handleShowNav} href="https://blog.dronkers.dev/" target="_blank" rel="noopener noreferrer">
                 <li className="py-4 text-sm">Blog</li>
               </a>
-              <Link href="/">
-                <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">Resume</li>
-              </Link>
             </ul>
           </div>
           <div className="border-b border-t border-gray-300 my-4">
