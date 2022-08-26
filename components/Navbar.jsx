@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { AiOutlineClose, AiOutlineMail } from 'react-icons/ai';
+import { IconContext } from 'react-icons';
+import { AiOutlineClose } from 'react-icons/ai';
 import { GrMenu } from 'react-icons/gr';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
+import { IoDocumentText } from 'react-icons/io5';
 import Navlogo from '../public/assets/laptop.png';
 
 function Navbar() {
   const [showNav, setShowNav] = useState(false);
+  const iconSize = useMemo(() => ({ size: '1.5em' }), []);
 
   const handleShowNav = () => {
     setShowNav(!showNav);
@@ -40,8 +44,8 @@ function Navbar() {
       <div className={showNav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
         <div className={
           showNav
-            ? 'fixed left-0 top-0 w-[70%] sm:w-[60%] md:w-[45%]  h-screen bg-[#ffffff] p-10 ease-in duration-300'
-            : 'fixed left-[-100%] top-0 w-[70%] sm:w-[60%] md:w-[45%] h-screen bg-[#ffffff] p-10 ease-in duration-300'
+            ? 'fixed left-0 top-0 w-[70%] sm:w-[60%] md:w-[45%]  h-screen bg-[#ffffff] p-10 ease-in duration-200'
+            : 'fixed left-[-100%] top-0 w-[70%] sm:w-[60%] md:w-[45%] h-screen bg-[#ffffff] p-10 ease-in duration-200'
         }
         >
           <div>
@@ -67,15 +71,26 @@ function Navbar() {
           </div>
           <div className="border-b border-t border-gray-300 my-4">
             <div className="">
-              <div className="flex items-center justify-between my-4 w-full">
-                <a onClick={handleShowNav} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50" href="https://www.linkedin.com/in/timdronkers" target="_blank" rel="noopener noreferrer">
-                  <FaLinkedin />
+              <div className="grid grid-cols-2 gap-3 place-items-center my-4">
+                <a onClick={handleShowNav} className="rounded-lg shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-50" href="mailto:tim@dronkers.dev">
+                  <IconContext.Provider value={iconSize}>
+                    <MdEmail />
+                  </IconContext.Provider>
                 </a>
-                <a onClick={handleShowNav} className="rounded-full shadow-lg shadow--gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50" href="https://github.com/tdronkers04" target="_blank" rel="noopener noreferrer">
-                  <FaGithub />
+                <a onClick={handleShowNav} className="rounded-lg shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-50" href="mailto:tim@dronkers.dev">
+                  <IconContext.Provider value={iconSize}>
+                    <IoDocumentText />
+                  </IconContext.Provider>
                 </a>
-                <a onClick={handleShowNav} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50" href="mailto:tim@dronkers.dev">
-                  <AiOutlineMail />
+                <a onClick={handleShowNav} className="rounded-lg shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-50" href="https://www.linkedin.com/in/timdronkers" target="_blank" rel="noopener noreferrer">
+                  <IconContext.Provider value={iconSize}>
+                    <FaLinkedin />
+                  </IconContext.Provider>
+                </a>
+                <a onClick={handleShowNav} className="rounded-lg shadow-lg shadow--gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-50" href="https://github.com/tdronkers04" target="_blank" rel="noopener noreferrer">
+                  <IconContext.Provider value={iconSize}>
+                    <FaGithub />
+                  </IconContext.Provider>
                 </a>
               </div>
             </div>
