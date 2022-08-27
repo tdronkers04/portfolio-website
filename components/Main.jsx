@@ -10,9 +10,9 @@ function Main() {
   const iconSize = useMemo(() => ({ size: '1.5em' }), []);
 
   return (
-    <div id="portfolio" className="w-full h-screen text-center">
+    <div id="main" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col items-center">
-        <div id="profile-picture" className="image-container md:max-w-[250px]">
+        <div id="profile-picture" className="image-container sm:max-w-[250px]">
           <Image alt="tim" src={timphoto} priority layout="responsive" className="image" />
         </div>
         <div id="intro">
@@ -23,7 +23,7 @@ function Main() {
               <span className="">Tim </span>
               <span role="img" aria-label="waving hand">👋</span>
             </h1>
-            <p className="py-4 text-gray-600 text-lg md:text-xl max-w-[70%] md:max-w-[60%] lg:max-w-[50%] m-auto">
+            <p className="py-4 text-gray-600 text-lg md:text-xl max-w-[90%] md:max-w-[80%] lg:max-w-[60%] m-auto">
               I&#39;m a software engineer based in Colorado.
               I love building fast, scalable cloud applications.
               Recently I co-created
@@ -32,7 +32,7 @@ function Main() {
               , an open-source,
               easy-to-configure active monitoring solution. Thanks for stopping by!
             </p>
-            <div className="flex items-center justify-between max-w-[300px] md:max-w-[400px] m-auto py-4">
+            <div className="hidden sm:flex items-center justify-between max-w-[300px] md:max-w-[400px] m-auto py-4">
               <a className="rounded-lg shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-50" title="e-mail" href="mailto:tim@dronkers.dev">
                 <IconContext.Provider value={iconSize}>
                   <MdEmail />

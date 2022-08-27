@@ -25,7 +25,7 @@ function Navbar() {
           <h3>dronkers.dev</h3>
         </div>
         <div>
-          <ul className="hidden md:flex">
+          <ul className="hidden sm:flex">
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">Home</li>
             </Link>
@@ -36,12 +36,12 @@ function Navbar() {
               <li className="ml-10 text-sm uppercase hover:border-b">Blog</li>
             </a>
           </ul>
-          <div onClick={handleShowNav} onKeyUp={handleShowNav} role="button" tabIndex={0} className="md:hidden">
+          <div onClick={handleShowNav} onKeyUp={handleShowNav} role="button" tabIndex={0} className="sm:hidden">
             <GrMenu size={30} />
           </div>
         </div>
       </div>
-      <div className={showNav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
+      <div className={showNav ? 'sm:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
         <div className={
           showNav
             ? 'fixed left-0 top-0 w-[70%] sm:w-[60%] md:w-[45%]  h-screen bg-[#ffffff] p-10 ease-in duration-200'
@@ -77,7 +77,7 @@ function Navbar() {
                     <MdEmail />
                   </IconContext.Provider>
                 </a>
-                <a onClick={handleShowNav} className="rounded-lg shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-50" href="mailto:tim@dronkers.dev">
+                <a onClick={handleShowNav} className="rounded-lg shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-50" href="assets/tim-dronkers-resume.pdf" target="_blank" rel="noopener noreferrer">
                   <IconContext.Provider value={iconSize}>
                     <IoDocumentText />
                   </IconContext.Provider>
