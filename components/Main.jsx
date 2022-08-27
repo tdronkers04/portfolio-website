@@ -12,8 +12,8 @@ function Main() {
   return (
     <div id="intro" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col items-center">
-        <div id="profile-picture" className="image-container sm:max-w-[250px]">
-          <Image alt="tim" src={timphoto} priority layout="responsive" className="image" />
+        <div className="mt-[10rem]">
+          <Image alt="tim" src={timphoto} priority width={250} height={250} />
         </div>
         <div id="intro">
           <div>
