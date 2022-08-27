@@ -1,15 +1,19 @@
 import Image from 'next/image';
-import React from 'react';
-import { AiOutlineMail } from 'react-icons/ai';
+import React, { useMemo } from 'react';
+import { IconContext } from 'react-icons';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
+import { IoDocumentText } from 'react-icons/io5';
 import timphoto from '../public/assets/tim_circle.png';
 
 function Main() {
+  const iconSize = useMemo(() => ({ size: '1.5em' }), []);
+
   return (
-    <div id="home" className="w-full h-screen text-center">
+    <div id="portfolio" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col items-center">
         <div id="profile-picture" className="image-container md:max-w-[250px]">
-          <Image alt="tim" src={timphoto} layout="responsive" className="image" />
+          <Image alt="tim" src={timphoto} priority layout="responsive" className="image" />
         </div>
         <div id="intro">
           <div>
@@ -28,15 +32,26 @@ function Main() {
               , an open-source,
               easy-to-configure active monitoring solution. Thanks for stopping by!
             </p>
-            <div className="flex items-center justify-between max-w-[300px] m-auto py-4">
-              <a className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300" href="https://www.linkedin.com/in/timdronkers/">
-                <FaLinkedin />
+            <div className="flex items-center justify-between max-w-[300px] md:max-w-[400px] m-auto py-4">
+              <a className="rounded-lg shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-50" title="e-mail" href="mailto:tim@dronkers.dev">
+                <IconContext.Provider value={iconSize}>
+                  <MdEmail />
+                </IconContext.Provider>
               </a>
-              <a className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300" href="https://github.com/tdronkers04">
-                <FaGithub />
+              <a className="rounded-md shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-50" title="resume" href="assets/tim-dronkers-resume.pdf" target="_blank" rel="noopener noreferrer">
+                <IconContext.Provider value={iconSize}>
+                  <IoDocumentText />
+                </IconContext.Provider>
               </a>
-              <a className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300" href="mailto:tim@dronkers.dev">
-                <AiOutlineMail />
+              <a className="rounded-lg shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-50" title="LinkedIn" href="https://www.linkedin.com/in/timdronkers/" target="_blank" rel="noopener noreferrer">
+                <IconContext.Provider value={iconSize}>
+                  <FaLinkedin />
+                </IconContext.Provider>
+              </a>
+              <a className="rounded-lg shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-50" title="GitHub" href="https://github.com/tdronkers04" target="_blank" rel="noopener noreferrer">
+                <IconContext.Provider value={iconSize}>
+                  <FaGithub />
+                </IconContext.Provider>
               </a>
             </div>
           </div>
