@@ -28,7 +28,7 @@ function Seymour() {
             </a>
           </div>
         </div>
-        <div className="w-full min-w-[300px] max-w-[600px] h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4">
+        <div className="hidden md:flex items-center justify-center p-4 w-full min-w-[350px] max-w-[400px] h-auto m-auto shadow-xl shadow-gray-400 rounded-xl">
           <a href="https://seymour-active-monitoring.github.io/" target="_blank" rel="noopener noreferrer">
             <Image src={seymourMap} className="rounded-xl" alt="seymour graphic" />
           </a>
