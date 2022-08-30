@@ -51,7 +51,7 @@ function Navbar() {
           <div>
             <div className="flex w-full items-center justify-between">
               <Image src={Navlogo} alt="dronkers.dev logo" width="100" height="100" />
-              <div onClick={handleShowNav} onKeyUp={handleShowNav} role="button" tabIndex={0} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50">
+              <div onClick={handleShowNav} onKeyUp={handleShowNav} role="button" tabIndex={0} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50" aria-label="close navbar button">
                 <AiOutlineClose />
               </div>
             </div>
@@ -72,22 +72,22 @@ function Navbar() {
           <div className="border-b border-t border-gray-300 my-4">
             <div className="">
               <div className="grid grid-cols-2 gap-3 place-items-center my-4">
-                <a onClick={handleShowNav} className="rounded-lg shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-50" href="mailto:tim@dronkers.dev">
+                <a onClick={handleShowNav} className="rounded-lg shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-50" href="mailto:tim@dronkers.dev" aria-label="email link">
                   <IconContext.Provider value={iconSize}>
                     <MdEmail />
                   </IconContext.Provider>
                 </a>
-                <a onClick={handleShowNav} className="rounded-lg shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-50" href="assets/tim-dronkers-resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a onClick={handleShowNav} className="rounded-lg shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-50" href="assets/tim-dronkers-resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="download resume link">
                   <IconContext.Provider value={iconSize}>
                     <IoDocumentText />
                   </IconContext.Provider>
                 </a>
-                <a onClick={handleShowNav} className="rounded-lg shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-50" href="https://www.linkedin.com/in/timdronkers" target="_blank" rel="noopener noreferrer">
+                <a onClick={handleShowNav} className="rounded-lg shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-50" href="https://www.linkedin.com/in/timdronkers" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn link">
                   <IconContext.Provider value={iconSize}>
                     <FaLinkedin />
                   </IconContext.Provider>
                 </a>
-                <a onClick={handleShowNav} className="rounded-lg shadow-lg shadow--gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-50" href="https://github.com/tdronkers04" target="_blank" rel="noopener noreferrer">
+                <a onClick={handleShowNav} className="rounded-lg shadow-lg shadow--gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-50" href="https://github.com/tdronkers04" target="_blank" rel="noopener noreferrer" aria-label="github link">
                   <IconContext.Provider value={iconSize}>
                     <FaGithub />
                   </IconContext.Provider>
