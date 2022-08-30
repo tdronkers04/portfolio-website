@@ -65,7 +65,7 @@ function Navbar() {
                 <Link href="/about">About</Link>
               </li>
               <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">
-                <a onClick={handleShowNav} href="https://blog.dronkers.dev" rel="noreferrer noopener">Blog</a>
+                <a onClick={handleShowNav} href="https://blog.dronkers.dev" target="_blank" rel="noreferrer noopener">Blog</a>
               </li>
             </ul>
           </div>
