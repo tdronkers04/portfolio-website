@@ -26,15 +26,15 @@ function Navbar() {
         </div>
         <div>
           <ul className="hidden sm:flex">
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">Home</li>
-            </Link>
-            <Link href="/about">
-              <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">About</li>
-            </Link>
-            <a href="https://blog.dronkers.dev/" target="_blank" rel="noopener noreferrer">
-              <li className="ml-10 text-sm uppercase hover:border-b">Blog</li>
-            </a>
+            <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">
+              <Link href="/">Home</Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">
+              <Link href="/about">About</Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">
+              <a href="https://blog.dronkers.dev" target="_blank" rel="noreferrer noopener">Blog</a>
+            </li>
           </ul>
           <div onClick={handleShowNav} onKeyUp={handleShowNav} role="button" tabIndex={0} className="sm:hidden">
             <GrMenu size={30} />
@@ -58,15 +58,15 @@ function Navbar() {
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
-              <Link href="/">
-                <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">Home</li>
-              </Link>
-              <Link href="/about">
-                <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">About</li>
-              </Link>
-              <a onClick={handleShowNav} href="https://blog.dronkers.dev/" target="_blank" rel="noopener noreferrer">
-                <li className="py-4 text-sm">Blog</li>
-              </a>
+              <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">
+                <Link href="/">Home</Link>
+              </li>
+              <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">
+                <Link href="/about">About</Link>
+              </li>
+              <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">
+                <a onClick={handleShowNav} href="https://blog.dronkers.dev" rel="noreferrer noopener">Blog</a>
+              </li>
             </ul>
           </div>
           <div className="border-b border-t border-gray-300 my-4">
