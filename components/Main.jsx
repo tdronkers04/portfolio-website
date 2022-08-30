@@ -12,7 +12,7 @@ function Main() {
   return (
     <div id="intro" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col items-center">
-        <div className="mt-[10rem]">
+        <div className="mt-[8rem] md:mt-[10rem] 2xl:mt-[12rem]">
           <Image alt="tim" src={timphoto} priority width={250} height={250} />
         </div>
         <div id="intro">
