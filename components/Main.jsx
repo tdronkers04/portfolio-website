@@ -33,22 +33,22 @@ function Main() {
               easy-to-configure active monitoring solution. Thanks for stopping by!
             </p>
             <div className="hidden sm:flex items-center justify-between max-w-[300px] md:max-w-[400px] m-auto py-4">
-              <a className="rounded-lg shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-50" title="e-mail" href="mailto:tim@dronkers.dev">
+              <a className="rounded-lg shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-50" title="e-mail" href="mailto:tim@dronkers.dev" aria-label="email link">
                 <IconContext.Provider value={iconSize}>
                   <MdEmail />
                 </IconContext.Provider>
               </a>
-              <a className="rounded-md shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-50" title="resume" href="assets/tim-dronkers-resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a className="rounded-md shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-50" title="resume" href="assets/tim-dronkers-resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="download resume link">
                 <IconContext.Provider value={iconSize}>
                   <IoDocumentText />
                 </IconContext.Provider>
               </a>
-              <a className="rounded-lg shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-50" title="LinkedIn" href="https://www.linkedin.com/in/timdronkers/" target="_blank" rel="noopener noreferrer">
+              <a className="rounded-lg shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-50" title="LinkedIn" href="https://www.linkedin.com/in/timdronkers/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn link">
                 <IconContext.Provider value={iconSize}>
                   <FaLinkedin />
                 </IconContext.Provider>
               </a>
-              <a className="rounded-lg shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-50" title="GitHub" href="https://github.com/tdronkers04" target="_blank" rel="noopener noreferrer">
+              <a className="rounded-lg shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-50" title="GitHub" href="https://github.com/tdronkers04" target="_blank" rel="noopener noreferrer" aria-label="github link">
                 <IconContext.Provider value={iconSize}>
                   <FaGithub />
                 </IconContext.Provider>

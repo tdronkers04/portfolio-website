@@ -26,15 +26,15 @@ function Navbar() {
         </div>
         <div>
           <ul className="hidden sm:flex">
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">Home</li>
-            </Link>
-            <Link href="/about">
-              <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">About</li>
-            </Link>
-            <a href="https://blog.dronkers.dev/" target="_blank" rel="noopener noreferrer">
-              <li className="ml-10 text-sm uppercase hover:border-b">Blog</li>
-            </a>
+            <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">
+              <Link href="/">Home</Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">
+              <Link href="/about">About</Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">
+              <a href="https://blog.dronkers.dev" target="_blank" rel="noreferrer noopener">Blog</a>
+            </li>
           </ul>
           <div onClick={handleShowNav} onKeyUp={handleShowNav} role="button" tabIndex={0} className="sm:hidden">
             <GrMenu size={30} />
@@ -51,43 +51,43 @@ function Navbar() {
           <div>
             <div className="flex w-full items-center justify-between">
               <Image src={Navlogo} alt="dronkers.dev logo" width="100" height="100" />
-              <div onClick={handleShowNav} onKeyUp={handleShowNav} role="button" tabIndex={0} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50">
+              <div onClick={handleShowNav} onKeyUp={handleShowNav} role="button" tabIndex={0} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-50" aria-label="close navbar button">
                 <AiOutlineClose />
               </div>
             </div>
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
-              <Link href="/">
-                <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">Home</li>
-              </Link>
-              <Link href="/about">
-                <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">About</li>
-              </Link>
-              <a onClick={handleShowNav} href="https://blog.dronkers.dev/" target="_blank" rel="noopener noreferrer">
-                <li className="py-4 text-sm">Blog</li>
-              </a>
+              <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">
+                <Link href="/">Home</Link>
+              </li>
+              <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">
+                <Link href="/about">About</Link>
+              </li>
+              <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">
+                <a onClick={handleShowNav} href="https://blog.dronkers.dev" target="_blank" rel="noreferrer noopener">Blog</a>
+              </li>
             </ul>
           </div>
           <div className="border-b border-t border-gray-300 my-4">
             <div className="">
               <div className="grid grid-cols-2 gap-3 place-items-center my-4">
-                <a onClick={handleShowNav} className="rounded-lg shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-50" href="mailto:tim@dronkers.dev">
+                <a onClick={handleShowNav} className="rounded-lg shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-50" href="mailto:tim@dronkers.dev" aria-label="email link">
                   <IconContext.Provider value={iconSize}>
                     <MdEmail />
                   </IconContext.Provider>
                 </a>
-                <a onClick={handleShowNav} className="rounded-lg shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-50" href="assets/tim-dronkers-resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a onClick={handleShowNav} className="rounded-lg shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-50" href="assets/tim-dronkers-resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="download resume link">
                   <IconContext.Provider value={iconSize}>
                     <IoDocumentText />
                   </IconContext.Provider>
                 </a>
-                <a onClick={handleShowNav} className="rounded-lg shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-50" href="https://www.linkedin.com/in/timdronkers" target="_blank" rel="noopener noreferrer">
+                <a onClick={handleShowNav} className="rounded-lg shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-50" href="https://www.linkedin.com/in/timdronkers" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn link">
                   <IconContext.Provider value={iconSize}>
                     <FaLinkedin />
                   </IconContext.Provider>
                 </a>
-                <a onClick={handleShowNav} className="rounded-lg shadow-lg shadow--gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-50" href="https://github.com/tdronkers04" target="_blank" rel="noopener noreferrer">
+                <a onClick={handleShowNav} className="rounded-lg shadow-lg shadow--gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-50" href="https://github.com/tdronkers04" target="_blank" rel="noopener noreferrer" aria-label="github link">
                   <IconContext.Provider value={iconSize}>
                     <FaGithub />
                   </IconContext.Provider>
