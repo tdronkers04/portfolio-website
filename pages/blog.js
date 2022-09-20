@@ -17,29 +17,55 @@ export async function getStaticProps() {
     uri: 'https://api.hashnode.com',
     cache: new InMemoryCache(),
   });
+  let results = [];
 
   const { data } = await client.query({
     query: gql`
-      query getPosts {
-        user(username: "tim-dronkers") {
-          publication {
-            posts {
-              _id
-              title
-              dateAdded
-              brief
-              totalReactions
-              responseCount
-            }
+    query getPosts($page: Int) {
+      user(username: "tim-dronkers") {
+        publication {
+          posts(page: $page) {
+            _id
+            title
+            dateAdded
+            brief
+            totalReactions
+            responseCount
           }
         }
       }
+    }
     `,
+    variables: { page: 0 },
   });
+
+  results = [...data.user.publication.posts];
+
+  const result2 = await client.query({
+    query: gql`
+    query getPosts($page: Int) {
+      user(username: "tim-dronkers") {
+        publication {
+          posts(page: $page) {
+            _id
+            title
+            dateAdded
+            brief
+            totalReactions
+            responseCount
+          }
+        }
+      }
+    }
+    `,
+    variables: { page: 1 },
+  });
+
+  results = results.concat([...result2.data.user.publication.posts]);
 
   return {
     props: {
-      posts: data.user.publication.posts,
+      posts: results,
     },
   };
 }
