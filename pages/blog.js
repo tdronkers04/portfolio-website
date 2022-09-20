@@ -3,9 +3,8 @@ import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 import PostList from '../components/PostList';
 
 export default function Blog({ posts }) {
-  console.log('posts: ', posts);
   return (
-    <div className="max-w-[800px] w-full h-full mx-auto p-2 flex flex-col items-center">
+    <div className="max-w-[600px] w-full h-full mx-auto p-2 flex flex-col items-center">
       <div className="mt-[4rem] md:mt-[5rem] 2xl:mt-[6rem]">
         <PostList posts={posts} />
       </div>
@@ -29,6 +28,8 @@ export async function getStaticProps() {
               title
               dateAdded
               brief
+              totalReactions
+              responseCount
             }
           }
         }
