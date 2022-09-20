@@ -33,7 +33,7 @@ function Navbar() {
               <Link href="/about">About</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">
-              <a href="https://blog.dronkers.dev" target="_blank" rel="noreferrer noopener">Blog</a>
+              <Link href="/blog">Blog</Link>
             </li>
           </ul>
           <div onClick={handleShowNav} onKeyUp={handleShowNav} role="button" tabIndex={0} className="sm:hidden">
@@ -65,7 +65,7 @@ function Navbar() {
                 <Link href="/about">About</Link>
               </li>
               <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">
-                <a onClick={handleShowNav} href="https://blog.dronkers.dev" target="_blank" rel="noreferrer noopener">Blog</a>
+                <Link href="/blog">Blog</Link>
               </li>
             </ul>
           </div>
