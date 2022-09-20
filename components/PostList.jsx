@@ -4,7 +4,7 @@ import PostPreview from './PostPreview';
 
 function PostList({ posts }) {
   return (
-    <div>
+    <div className="p-3">
       {posts.map((post) => <PostPreview key={post._id} post={post} />)}
     </div>
   );
