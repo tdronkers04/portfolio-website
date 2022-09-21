@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
 import { IconContext } from 'react-icons';
@@ -12,6 +13,7 @@ import Navlogo from '../public/assets/laptop.png';
 function Navbar() {
   const [showNav, setShowNav] = useState(false);
   const iconSize = useMemo(() => ({ size: '1.5em' }), []);
+  const router = useRouter();
 
   const handleShowNav = () => {
     setShowNav(!showNav);
@@ -26,13 +28,13 @@ function Navbar() {
         </div>
         <div>
           <ul className="hidden sm:flex">
-            <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">
+            <li className={`ml-10 text-sm uppercase hover:font-bold cursor-pointer ${router.pathname === '/' ? 'border-b border-black' : ''}`}>
               <Link href="/">Home</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">
+            <li className={`ml-10 text-sm uppercase hover:font-bold cursor-pointer ${router.pathname === '/about' ? 'border-b border-black' : ''}`}>
               <Link href="/about">About</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">
+            <li className={`ml-10 text-sm uppercase hover:font-bold cursor-pointer ${router.pathname === '/blog' ? 'border-b border-black' : ''}`}>
               <Link href="/blog">Blog</Link>
             </li>
           </ul>
