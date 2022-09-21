@@ -28,13 +28,13 @@ function Navbar() {
         </div>
         <div>
           <ul className="hidden sm:flex">
-            <li className={`ml-10 text-sm uppercase hover:font-bold cursor-pointer ${router.pathname === '/' ? 'border-b border-black' : ''}`}>
+            <li className={`ml-10 text-sm uppercase hover:text-[#011e6f] cursor-pointer ${router.pathname === '/' ? 'border-b border-[#011e6f]' : ''}`}>
               <Link href="/">Home</Link>
             </li>
-            <li className={`ml-10 text-sm uppercase hover:font-bold cursor-pointer ${router.pathname === '/about' ? 'border-b border-black' : ''}`}>
+            <li className={`ml-10 text-sm uppercase hover:text-[#011e6f] cursor-pointer ${router.pathname === '/about' ? 'border-b border-slate-700' : ''}`}>
               <Link href="/about">About</Link>
             </li>
-            <li className={`ml-10 text-sm uppercase hover:font-bold cursor-pointer ${router.pathname === '/blog' ? 'border-b border-black' : ''}`}>
+            <li className={`ml-10 text-sm uppercase hover:text-[#011e6f] cursor-pointer ${router.pathname === '/blog' ? 'border-b border-slate-700' : ''}`}>
               <Link href="/blog">Blog</Link>
             </li>
           </ul>
