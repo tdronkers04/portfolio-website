@@ -1,12 +1,12 @@
 /* eslint-disable no-restricted-syntax */
 import React from 'react';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 import Meta from '../../../components/Meta';
 import fetchAllBlogPosts from '../../../lib/fetchAllBlogPosts';
 
 export default function BlogPost({ post }) {
-  const router = useRouter();
-  const { id } = router.query;
+  // const router = useRouter();
+  // const { id } = router.query;
 
   return (
     <>
