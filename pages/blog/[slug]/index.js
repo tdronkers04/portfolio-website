@@ -1,20 +1,17 @@
 /* eslint-disable no-restricted-syntax */
 import React from 'react';
-// import { useRouter } from 'next/router';
 import Meta from '../../../components/Meta';
 import fetchAllBlogPosts from '../../../lib/fetchAllBlogPosts';
+import fetchBlogPost from '../../../lib/fetchBlogPost';
 
 export default function BlogPost({ post }) {
-  // const router = useRouter();
-  // const { id } = router.query;
-
   return (
     <>
       <Meta title={post.title} description={post.brief} />
       <div className="w-full h-screen flex items-center">
         <div className="px-3">
           <h1>{post.title}</h1>
-          <p>HELLO WORLD!</p>
+          <p>{post.brief}</p>
         </div>
       </div>
 
@@ -22,15 +19,12 @@ export default function BlogPost({ post }) {
   );
 }
 
-export async function getStaticProps() {
-  const post = {
-    title: 'test title',
-    brief: 'test brief',
-  };
+export async function getStaticProps(context) {
+  const result = await fetchBlogPost(context.params.slug);
 
   return {
     props: {
-      post,
+      post: result.post,
     },
   };
 }
