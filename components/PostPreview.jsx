@@ -10,7 +10,10 @@ function PostPreview({ post }) {
           <h3 className="text-black text-lg">{post.title}</h3>
         </Link>
       </div>
-      <p className="py-2">{post.brief}</p>
+      <p className="py-2">
+        {post.brief}
+        <span className="text-black underline underline-offset-2 hover:text-[#011e6f] px-2"><Link href={`/blog/${post.slug}`}>Read more</Link></span>
+      </p>
       <div className="max-w-[200px] grid grid-rows-1 grid-flow-col gap-4">
         <p>{post.dateAdded.split('T')[0]}</p>
         <div className=" max-w-[50px] grid grid-rows-1 grid-flow-col">
