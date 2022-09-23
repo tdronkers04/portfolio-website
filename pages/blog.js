@@ -1,7 +1,7 @@
 /* eslint-disable no-restricted-syntax */
 import React from 'react';
 import PostList from '../components/PostList';
-import fetchBlogPosts from '../lib/fetchAllBlogPosts';
+import fetchAllBlogPosts from '../lib/fetchAllBlogPosts';
 
 export default function Blog({ posts }) {
   return (
@@ -15,7 +15,7 @@ export default function Blog({ posts }) {
 
 export async function getStaticProps() {
   let results = [];
-  const iterator = fetchBlogPosts();
+  const iterator = fetchAllBlogPosts();
 
   for await (const posts of iterator) {
     results = results.concat(posts);

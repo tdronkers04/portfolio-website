@@ -4,9 +4,9 @@ import { FaRegComment, FaRegHeart } from 'react-icons/fa';
 function PostPreview({ post }) {
   return (
     <div className="pt-6">
-      <h3 className="font-bold">{post.title}</h3>
+      <h3 className="text-black text-lg">{post.title}</h3>
       <p className="py-2">{post.brief}</p>
-      <div className="max-w-[200px] grid grid-rows-1 grid-flow-col gap-4 font-semibold">
+      <div className="max-w-[200px] grid grid-rows-1 grid-flow-col gap-4">
         <p>{post.dateAdded.split('T')[0]}</p>
         <div className=" max-w-[50px] grid grid-rows-1 grid-flow-col">
           <FaRegComment />
