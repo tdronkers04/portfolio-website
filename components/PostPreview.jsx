@@ -1,10 +1,15 @@
 import React from 'react';
+import Link from 'next/link';
 import { FaRegComment, FaRegHeart } from 'react-icons/fa';
 
 function PostPreview({ post }) {
   return (
     <div className="pt-6">
-      <h3 className="text-black text-lg">{post.title}</h3>
+      <div className="cursor-pointer">
+        <Link href={`/blog/${post.slug}`}>
+          <h3 className="text-black text-lg">{post.title}</h3>
+        </Link>
+      </div>
       <p className="py-2">{post.brief}</p>
       <div className="max-w-[200px] grid grid-rows-1 grid-flow-col gap-4">
         <p>{post.dateAdded.split('T')[0]}</p>
@@ -18,6 +23,7 @@ function PostPreview({ post }) {
         </div>
       </div>
     </div>
+
   );
 }
 
