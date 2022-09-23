@@ -43,8 +43,8 @@ export async function getStaticPaths() {
     results = results.concat(posts);
   }
 
-  const ids = results.map((post) => post._id);
-  const paths = ids.map((id) => ({ params: { id: id.toString() } }));
+  const slugs = results.map((post) => post.slug);
+  const paths = slugs.map((slug) => ({ params: { slug: slug.toString() } }));
 
   return {
     paths,
