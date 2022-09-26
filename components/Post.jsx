@@ -12,7 +12,6 @@ function Post({ post }) {
           className="markdown"
         >
           {post.contentMarkdown}
-
         </ReactMarkdown>
       </div>
     </div>
