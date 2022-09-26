@@ -21,3 +21,35 @@ html {
   position: relative !important;
   height: unset !important;
 }
+
+.markdown {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.markdown p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.markdown h3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
+.markdown ul {
+  padding-top: 1rem;
+}
+
+.markdown ul li {
+  padding-top: 1rem;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.markdown code {
+  display: block;
+  white-space: pre-wrap;
+  
+}

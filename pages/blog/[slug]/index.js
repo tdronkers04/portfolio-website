@@ -3,19 +3,15 @@ import React from 'react';
 import Meta from '../../../components/Meta';
 import fetchAllBlogPosts from '../../../lib/fetchAllBlogPosts';
 import fetchBlogPost from '../../../lib/fetchBlogPost';
+import Post from '../../../components/Post';
 
 export default function BlogPost({ post }) {
   return (
     <>
       <Meta title={post.title} description={post.brief} />
-      <div className="w-full h-screen flex items-center">
-        <div className="px-3">
-          <h1>{post.title}</h1>
-          <p>{post.brief}</p>
-        </div>
-      </div>
-
+      <Post post={post} />
     </>
+
   );
 }
 
