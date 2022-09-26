@@ -34,7 +34,7 @@ function Navbar() {
             <li className={`ml-10 text-sm uppercase hover:text-[#011e6f] cursor-pointer ${router.pathname === '/about' ? 'border-b border-slate-700' : ''}`}>
               <Link href="/about">About</Link>
             </li>
-            <li className={`ml-10 text-sm uppercase hover:text-[#011e6f] cursor-pointer ${router.pathname === '/blog' ? 'border-b border-slate-700' : ''}`}>
+            <li className={`ml-10 text-sm uppercase hover:text-[#011e6f] cursor-pointer ${router.pathname.startsWith('/blog') ? 'border-b border-slate-700' : ''}`}>
               <Link href="/blog">Blog</Link>
             </li>
           </ul>
