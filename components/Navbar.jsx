@@ -21,9 +21,9 @@ function Navbar() {
 
   return (
     <div className="fixed w-full h-20 shadow-xl z-[99] p-4 bg-[#ffffff]">
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 cursor-pointer">
+      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between cursor-pointer">
             <Image src={Navlogo} alt="/" width="100" height="100" />
             <h3>dronkers.dev</h3>
           </div>
