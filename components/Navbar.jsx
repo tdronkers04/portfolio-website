@@ -59,7 +59,7 @@ function Navbar() {
             </div>
           </div>
           <div className="py-4 flex flex-col">
-            <ul className="uppercase">
+            {/* <ul className="uppercase">
               <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">
                 <Link href="/">Home</Link>
               </li>
@@ -69,7 +69,7 @@ function Navbar() {
               <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">
                 <Link href="/blog">Blog</Link>
               </li>
-            </ul>
+            </ul> */}
           </div>
           <div className="border-b border-t border-gray-300 my-4">
             <div className="">
