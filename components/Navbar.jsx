@@ -22,20 +22,22 @@ function Navbar() {
   return (
     <div className="fixed w-full h-20 shadow-xl z-[99] p-4 bg-[#ffffff]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <div className="flex items-center justify-between">
-          <Image src={Navlogo} alt="/" width="100" height="100" />
-          <h3>dronkers.dev</h3>
-        </div>
+        <Link href="/">
+          <div className="flex items-center justify-between cursor-pointer">
+            <Image src={Navlogo} alt="/" width="100" height="100" />
+            <h3>dronkers.dev</h3>
+          </div>
+        </Link>
         <div>
           <ul className="hidden sm:flex">
             <li className={`ml-10 text-sm uppercase hover:text-[#011e6f] cursor-pointer ${router.pathname === '/' ? 'border-b border-[#011e6f]' : ''}`}>
-              <Link href="/">Home</Link>
+              {/* <Link href="/">Home</Link> */}
             </li>
             <li className={`ml-10 text-sm uppercase hover:text-[#011e6f] cursor-pointer ${router.pathname === '/about' ? 'border-b border-slate-700' : ''}`}>
-              <Link href="/about">About</Link>
+              {/* <Link href="/about">About</Link> */}
             </li>
             <li className={`ml-10 text-sm uppercase hover:text-[#011e6f] cursor-pointer ${router.pathname.startsWith('/blog') ? 'border-b border-slate-700' : ''}`}>
-              <Link href="/blog">Blog</Link>
+              {/* <Link href="/blog">Blog</Link> */}
             </li>
           </ul>
           <div onClick={handleShowNav} onKeyUp={handleShowNav} role="button" tabIndex={0} className="sm:hidden">
@@ -59,7 +61,7 @@ function Navbar() {
             </div>
           </div>
           <div className="py-4 flex flex-col">
-            <ul className="uppercase">
+            {/* <ul className="uppercase">
               <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">
                 <Link href="/">Home</Link>
               </li>
@@ -69,7 +71,7 @@ function Navbar() {
               <li onClick={handleShowNav} className="py-4 text-sm cursor-pointer">
                 <Link href="/blog">Blog</Link>
               </li>
-            </ul>
+            </ul> */}
           </div>
           <div className="border-b border-t border-gray-300 my-4">
             <div className="">
