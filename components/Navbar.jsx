@@ -21,11 +21,13 @@ function Navbar() {
 
   return (
     <div className="fixed w-full h-20 shadow-xl z-[99] p-4 bg-[#ffffff]">
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <div className="flex items-center justify-between">
-          <Image src={Navlogo} alt="/" width="100" height="100" />
-          <h3>dronkers.dev</h3>
-        </div>
+      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 cursor-pointer">
+        <Link href="/">
+          <div className="flex items-center justify-between">
+            <Image src={Navlogo} alt="/" width="100" height="100" />
+            <h3>dronkers.dev</h3>
+          </div>
+        </Link>
         <div>
           <ul className="hidden sm:flex">
             <li className={`ml-10 text-sm uppercase hover:text-[#011e6f] cursor-pointer ${router.pathname === '/' ? 'border-b border-[#011e6f]' : ''}`}>
