@@ -41,10 +41,10 @@ function Seymour() {
           </div>
           <div className="grid grid-cols-1 grid-rows-2 gap-2 py-4 max-w-sm">
             <a href="https://seymour-active-monitoring.github.io/case-study.html" target="_blank" rel="noopener noreferrer">
-              <p className="text-center py-1 rounded-lg bg-gray-500 text-[#ffffff] font-Lexend text-sm md:text-md cursor-pointer">Read the Case Study</p>
+              <p className="text-center py-1 rounded-lg bg-gray-500 hover:bg-[#011e6f] text-[#ffffff] font-Lexend text-sm md:text-md cursor-pointer">Read the Case Study</p>
             </a>
             <a href="https://www.youtube.com/watch?v=vQGqlZumF8E" target="_blank" rel="noopener noreferrer">
-              <p className="text-center py-1 rounded-lg bg-gray-500 text-[#ffffff] font-Lexend text-sm md:text-md cursor-pointer">Watch the Presentation</p>
+              <p className="text-center py-1 rounded-lg bg-gray-500 hover:bg-[#011e6f] text-[#ffffff] font-Lexend text-sm md:text-md cursor-pointer">Watch the Presentation</p>
             </a>
           </div>
         </div>
