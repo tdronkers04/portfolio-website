@@ -8,7 +8,7 @@ import psqlIcon from '../../public/assets/tech/psql.png';
 function GameAlert() {
   return (
     <div id="game-alert" className="relative flex flex-items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#333333] to-[#666666]">
-      <Image className="rounded-xl group-hover:opacity-10" src={gameAlertImg} alt="game alert screenshot" />
+      <Image className="rounded-xl group-hover:opacity-10" src={gameAlertImg} alt="game alert screenshot" placeholder="blur" />
       <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
         <h3 className="text-lg md:text-2xl text-white -tracking-wider text-center">Game Alert</h3>
         <p className="hidden md:flex pb-4 pt-2 text-sm text-white text-center">A full-stack application that provides custom notifications for sporting events. Game-Alert uses Node.js and PostgreSQL on the backend. Push notifications are implemented with the node-mailer library and Twilio API.</p>

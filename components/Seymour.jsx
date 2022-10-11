@@ -9,11 +9,11 @@ import seymourDeploy from '../public/assets/seymour_deploy.gif';
 function Seymour() {
   return (
     <div id="seymour" className="w-full px-4 mt-12 md:mt-4">
-      <div id="seymour-section-1" className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 items-center">
+      <div id="seymour-section-1" className="max-w-[1240px] m-auto lg:grid grid-cols-3 gap-8 items-center">
         <div className="col-span-1 p-2">
           <div id="seymour-logo" className="image-container md:max-w-[400px]">
             <a href="https://seymour-active-monitoring.github.io/" target="_blank" rel="noopener noreferrer">
-              <Image alt="seymour logo" src={seymourLogo} />
+              <Image alt="seymour logo" src={seymourLogo} placeholder="blur" />
             </a>
           </div>
           <h2 className="py-4 text-gray-700 text-xl md:text-xl">Active Monitoring for API endpoints</h2>
@@ -24,15 +24,15 @@ function Seymour() {
         </div>
         <div className="col-span-2 p-2">
           <div id="mock-ui-container" className="p-4 shadow-xl shadow-gray-400 rounded-xl">
-            <Image src={seymourResults} className="rounded-xl" alt="mock seymour user interface" />
+            <Image src={seymourResults} className="rounded-xl" alt="mock seymour user interface" placeholder="blur" />
           </div>
         </div>
         <div />
       </div>
-      <div id="seymour-section-2" className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 items-center">
+      <div id="seymour-section-2" className="max-w-[1240px] m-auto lg:grid grid-cols-3 gap-8 items-center">
         <div className="col-span-2 p-2">
           <div id="architecture-container" className="p-4 shadow-xl shadow-gray-400 rounded-xl">
-            <Image src={seymourArchitecture} className="rounded-xl" alt="seymour architecture diagram" />
+            <Image src={seymourArchitecture} className="rounded-xl" alt="seymour architecture diagram" placeholder="blur" />
           </div>
         </div>
         <div className="col-span-1 p-2">
