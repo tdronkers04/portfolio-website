@@ -11,7 +11,7 @@ function Snaggl() {
       <Image className="rounded-xl group-hover:opacity-10" src={snagglImg} alt="snaggl screenshot" placeholder="blur" />
       <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
         <h3 className="text-lg md:text-2xl text-white -tracking-wider text-center">Snaggl</h3>
-        <p className="hidden md:flex pb-4 pt-2 text-sm text-white text-center">A full-stack application for inspecting and debugging webhook requests. Built with React.js, Node.js and PostgreSQL</p>
+        <p className="hidden md:flex pb-4 pt-2 text-sm text-white text-center">A full-stack application for inspecting and debugging webhook requests. Built with React.js, Node.js and PostgreSQL. Deployed to a Digital Ocean Droplet.</p>
         <p className="md:hidden pb-4 pt-2 text-sm text-white text-center">A full-stack application for inspecting and debugging webhook requests.</p>
         <div className="grid grid-cols-3 gap-1 place-items-center py-1">
           <div className="image-container max-w-[35px]">
