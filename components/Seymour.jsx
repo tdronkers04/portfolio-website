@@ -2,12 +2,11 @@
 import Image from 'next/image';
 import React from 'react';
 import seymourLogo from '../public/assets/seymour_text.png';
-import seymourMap from '../public/assets/seymour_map.png';
 import seymourResults from '../public/assets/seymour_test_results.png';
 
 function Seymour() {
   return (
-    <div id="seymour" className="w-full h-screen px-4">
+    <div id="seymour" className="w-full px-4 mt-12 md:mt-4">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 items-center">
         <div className="col-span-1 py-4">
           <div id="seymour-logo" className="image-container md:max-w-[400px]">
