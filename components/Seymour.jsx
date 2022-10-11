@@ -9,10 +9,11 @@ function Seymour() {
   return (
     <div id="seymour" className="w-full h-screen px-4">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 items-center">
-        <div className="col-span-1">
+        <div className="col-span-1 py-4">
           <div id="seymour-logo" className="image-container md:max-w-[400px]">
             <a href="https://seymour-active-monitoring.github.io/" target="_blank" rel="noopener noreferrer">
-              <Image alt="seymour logo" src={seymourLogo} layout="responsive" className="image" />
+              {/* <Image alt="seymour logo" src={seymourLogo} layout="responsive" className="image" /> */}
+              <Image alt="seymour logo" src={seymourLogo} layout="responsive" />
             </a>
           </div>
           <h2 className="py-4 text-gray-700 text-xl md:text-2xl">Active Monitoring for API endpoints</h2>
