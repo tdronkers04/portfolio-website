@@ -63,7 +63,9 @@ function Seymour() {
           <div id="deploy-container">
             <p className="p-2">Seymour&apos;s infrastructure is easily deployed on an AWS account with two CLI commands.</p>
             <a href="https://seymour-active-monitoring.github.io/" target="_blank" rel="noopener noreferrer">
-              <Image src={seymourDeploy} className="rounded-xl" alt="seymour deployment demo" />
+              <video autoPlay loop muted playsInline>
+                <source src="/assets/seymour_deploy.webm" type="video/webm" />
+              </video>
             </a>
           </div>
           <div className="grid grid-cols-1 grid-rows-2 gap-2 py-4 max-w-sm">
