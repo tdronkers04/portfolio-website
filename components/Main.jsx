@@ -12,7 +12,7 @@ function Main() {
   return (
     <div id="intro" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col items-center">
-        <div className="mt-[8rem] md:mt-[10rem] 2xl:mt-[12rem]">
+        <div className="mt-[6rem] md:mt-[8rem] 2xl:mt-[10rem]">
           <Image alt="tim" src={timphoto} priority width={250} height={250} />
         </div>
         <div id="intro">
@@ -30,7 +30,8 @@ function Main() {
               co-created
               {' '}
               <span className="font-Lexend text-[#011e6f]"><a href="#seymour">Seymour</a></span>
-              , an open-source, easy-to-configure active monitoring solution.
+              , an open-source, easy-to-configure active monitoring tool that enables continuous
+              testing of production API endpoints.
             </p>
             <div className="hidden sm:flex items-center justify-between max-w-[300px] md:max-w-[400px] m-auto py-4">
               <a className="rounded-lg shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-50" title="e-mail" href="mailto:tim@dronkers.dev" aria-label="email link">
