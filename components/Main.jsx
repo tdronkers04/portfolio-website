@@ -23,14 +23,14 @@ function Main() {
               <span className="">Tim </span>
               <span role="img" aria-label="waving hand">👋</span>
             </h1>
-            <p className="py-4 text-gray-600 text-lg md:text-xl max-w-[90%] md:max-w-[80%] lg:max-w-[60%] m-auto">
-              I&#39;m a software engineer based in Colorado.
-              I love building fast, scalable cloud applications.
-              Recently I co-created
+            <p className="py-4 text-gray-600 text-lg md:text-xl max-w-[90%] md:max-w-[85%] lg:max-w-[65%] m-auto">
+              I&#39;m a software engineer with experience developing full-stack,
+              cloud-native applications with great UIs. I write code that is human-friendly,
+              testable and robust. I love learning and do my best work in teams. Recently I
+              co-created
               {' '}
               <span className="font-Lexend text-[#011e6f]"><a href="#seymour">Seymour</a></span>
-              , an open-source,
-              easy-to-configure active monitoring solution. Thanks for stopping by!
+              , an open-source, easy-to-configure active monitoring solution.
             </p>
             <div className="hidden sm:flex items-center justify-between max-w-[300px] md:max-w-[400px] m-auto py-4">
               <a className="rounded-lg shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-50" title="e-mail" href="mailto:tim@dronkers.dev" aria-label="email link">
