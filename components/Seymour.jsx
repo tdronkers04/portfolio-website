@@ -4,7 +4,6 @@ import React from 'react';
 import seymourLogo from '../public/assets/seymour_text.png';
 import seymourResults from '../public/assets/seymour_test_results.png';
 import seymourArchitecture from '../public/assets/seymour_architecture.png';
-import seymourDeploy from '../public/assets/seymour_deploy.gif';
 
 function Seymour() {
   return (
