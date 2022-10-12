@@ -24,7 +24,9 @@ function Seymour() {
         </div>
         <div className="col-span-2 p-2">
           <div id="mock-ui-container" className="p-4 shadow-xl shadow-gray-400 rounded-xl">
-            <Image src={seymourResults} className="rounded-xl" alt="mock seymour user interface" placeholder="blur" />
+            <a href="https://seymour-active-monitoring.github.io/" target="_blank" rel="noopener noreferrer">
+              <Image src={seymourResults} className="rounded-xl" alt="mock seymour user interface" placeholder="blur" />
+            </a>
           </div>
         </div>
         <div />
@@ -32,12 +34,16 @@ function Seymour() {
       <div id="seymour-section-2" className="max-w-[1240px] m-auto lg:grid grid-cols-3 gap-8 items-center">
         <div className="col-span-2 p-2">
           <div id="architecture-container" className="p-4 shadow-xl shadow-gray-400 rounded-xl">
-            <Image src={seymourArchitecture} className="rounded-xl" alt="seymour architecture diagram" placeholder="blur" />
+            <a href="https://seymour-active-monitoring.github.io/" target="_blank" rel="noopener noreferrer">
+              <Image src={seymourArchitecture} className="rounded-xl" alt="seymour architecture diagram" placeholder="blur" />
+            </a>
           </div>
         </div>
         <div className="col-span-1 p-2">
-          <div id="deploy-container" className="">
-            <Image src={seymourDeploy} className="rounded-xl" alt="seymour deployment demo" />
+          <div id="deploy-container">
+            <a href="https://seymour-active-monitoring.github.io/" target="_blank" rel="noopener noreferrer">
+              <Image src={seymourDeploy} className="rounded-xl" alt="seymour deployment demo" />
+            </a>
           </div>
           <div className="grid grid-cols-1 grid-rows-2 gap-2 py-4 max-w-sm">
             <a href="https://seymour-active-monitoring.github.io/case-study.html" target="_blank" rel="noopener noreferrer">
