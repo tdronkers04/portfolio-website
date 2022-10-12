@@ -7,7 +7,7 @@ import seymourArchitecture from '../public/assets/seymour_architecture.png';
 
 function Seymour() {
   return (
-    <div id="seymour" className="w-full px-4 mt-12 md:mt-4">
+    <div id="seymour" className="w-full px-4 pt-20 mt-12 md:mt-4">
       <div id="seymour-section-1" className="max-w-[1240px] m-auto lg:grid grid-cols-3 gap-8 items-center">
         <div className="col-span-1 p-2">
           <div id="seymour-logo" className="image-container md:max-w-[400px]">
