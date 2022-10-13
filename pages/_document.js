@@ -7,7 +7,9 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "ba8e0c2c08a9462c80676509e0d83d6f"}' />
+        </Head>
         <body>
           <Main />
           <NextScript />
