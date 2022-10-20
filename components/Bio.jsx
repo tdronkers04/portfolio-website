@@ -29,8 +29,9 @@ function Bio() {
                     <a className="font-bold text-[#011e6f] cursor-pointer" href="https://blog.dronkers.dev/buy-the-ticket-take-the-ride" target="_blank" rel="noopener noreferrer">calling</a>
                     {' '}
                     in software development.
-                    Nothing energizes me more than building things that people find useful,
-                    especially elegant, intuitive, and blazingly fast 🔥 user interfaces.
+                    Nothing energizes me more than building things that people find useful.
+                    I care deeply about the end-user and get inspired by any opportunity to
+                    make the user experince or workflow better, if only incrementally.
                     I&#39;m at my best when tackling big, hairy problems alongside colleagues.
                     When time permits, I love exploring and tinkering with new technologies!
                   </p>

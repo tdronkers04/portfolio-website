@@ -25,7 +25,7 @@ function Main() {
             </h1>
             <p className="py-4 text-gray-600 text-lg md:text-xl max-w-[90%] md:max-w-[85%] lg:max-w-[65%] m-auto">
               I&#39;m a software engineer with experience developing full-stack,
-              cloud-native applications with great UIs. I write code that is human-friendly,
+              cloud-native applications. I write code that is human-friendly,
               testable and robust. I love learning and do my best work in teams. Recently I
               co-created
               {' '}
